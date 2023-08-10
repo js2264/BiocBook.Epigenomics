@@ -1,5 +1,5 @@
 book:
-  title: "<Package_name>"
+  title: "BiocBook.Epigenomics"
   chapters:
     - index.qmd
   cover-image: inst/assets/cover.png
@@ -9,9 +9,9 @@ book:
       - icon: git
         menu:
           - text: Source Code
-            url:  https://github.com/<github_user>/<Package_name>/
+            url:  https://github.com/js2264/BiocBook.Epigenomics/
           - text: Browse version `devel`
-            url:  https://<github_user>.github.io/<Package_name>/devel/
+            url:  https://js2264.github.io/BiocBook.Epigenomics/devel/
     style: "docked"
     background: "light"
     collapse-level: 5

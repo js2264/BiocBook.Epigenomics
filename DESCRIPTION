@@ -1,4 +1,4 @@
-Package: <Package_name>
+Package: BiocBook.Epigenomics
 Title: What the Package Does (One Line, Title Case)
 Description: What the package does (one paragraph).
 Version: 0.99.0
@@ -9,8 +9,8 @@ Authors@R:
         role = c("aut", "cre"),
         comment = c(ORCID = "YOUR-ORCID-ID")
     )
-URL: https://github.com/<github_user>/<Package_name>
-BugReports: https://github.com/<github_user>/<Package_name>
+URL: https://github.com/js2264/BiocBook.Epigenomics
+BugReports: https://github.com/js2264/BiocBook.Epigenomics
 Depends:
     R (>= 4.3), 
     BiocBook
