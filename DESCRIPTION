@@ -1,0 +1,33 @@
+Package: <Package_name>
+Title: What the Package Does (One Line, Title Case)
+Description: What the package does (one paragraph).
+Version: 0.99.0
+Date: `r date()`
+Authors@R: 
+    person(
+        "First", "Last", , "first.last@example.com", 
+        role = c("aut", "cre"),
+        comment = c(ORCID = "YOUR-ORCID-ID")
+    )
+URL: https://github.com/<github_user>/<Package_name>
+BugReports: https://github.com/<github_user>/<Package_name>
+Depends:
+    R (>= 4.3), 
+    BiocBook
+Imports:
+Suggests:
+    glue,
+    rebook,
+    sessioninfo, 
+    knitr, 
+    quarto
+Remotes:
+    github::js2264/BiocBook
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+biocViews: 
+	Infrastructure, 
+    ReportWriting, 
+    Software
+License: MIT + file LICENSE
