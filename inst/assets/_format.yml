@@ -6,6 +6,7 @@ format:
     theme: 
       - cosmo
       - inst/assets/book.scss
+      - workshop.scss
     highlight-style: atom-one
     code-link: true
     editor: visual

@@ -1,0 +1,84 @@
+---
+engine: knitr
+execute:
+    eval: false
+---
+
+# Prerequisites {-}
+
+The course is intended for those who have been through a very basic introduction to Unix and 
+the R scripting language.
+
+* If a refresher is needed for Unix command line, please go over [this tutorial](https://ryanstutorials.net/linuxtutorial/) and its [companion cheatsheet](https://ryanstutorials.net/linuxtutorial/cheatsheet.php).
+* Another helpful UNIX cheatsheet: [here](https://files.fosswire.com/2007/08/fwunixref.pdf)
+* Getting down to basics: an introduction to the fundamentals of R ([courtesy of Mark Ravinet](markravinet.github.io/Introduction.html)).
+
+## Local configuration 
+
+::: {.callout-tip icon='true'}
+
+### A `Docker` image is available for this workshop: 
+
+👉 [ghcr.io/js2264/biocbook.epigenomics](https://ghcr.io/js2264/biocbook.epigenomics) 🐳
+
+You can get access to all the packages used in this book in < 1 minute, 
+using this command in a terminal: 
+
+```{sh "docker", filename="bash"}
+#| eval: false
+docker run -it ghcr.io/js2264/biocbook.epigenomics:devel R
+```
+
+:::
+
+* Computer with high-speed internet access 
+
+* Zoom visioconference software
+
+* **For Windows users: PLEASE INSTALL WSL 2**. Instructions are here: [learn.microsoft.com/en-us/windows/wsl/install](https://learn.microsoft.com/en-us/windows/wsl/install)
+
+* IGV software installed 
+
+* Several system dependencies
+
+    - [`R>=4.1`](https://cloud.r-project.org/)
+    - [`fastqc`](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
+    - [`cutadapt`](https://cutadapt.readthedocs.io/en/stable/installation.html)
+    - [`trim_galore`](https://github.com/FelixKrueger/TrimGalore)
+    - [`bowtie2`](https://bowtie-bio.sourceforge.net/bowtie2/manual.shtml#obtaining-bowtie-2)
+    - [`deepTools`](https://deeptools.readthedocs.io/en/develop/content/installation.html)
+    - [`macs2`](https://github.com/macs3-project/MACS/wiki/Install-macs2#easy-installation-through-pypi)
+    - [`meme`](https://meme-suite.org/meme/doc/install.html?man_type=web)
+    - [`subread`](https://subread.sourceforge.net/)
+
+::: {.callout-tip icon='true'}
+
+### Installing system dependencies with `micromamba` 
+
+`micromamba` is a blazing-fast flavour of `conda`, a software manager available in Mac and Linux. 
+`micromamba` sets up *environments*, directories in your computer in which `micromamba` installs softwares **only available upon environment activation**. 
+
+To install `micromamba` and system dependencies listed hereabove, use the following: 
+
+```{bash, filename = 'sh'}
+# apt update && apt install -y bzip2 curl wget
+curl -L micro.mamba.pm/install.sh | bash
+bash
+micromamba create -n epigenomics
+micromamba install --name epigenomics -c bioconda -c conda-forge \
+    fastqc fastqc trim-galore bowtie2 deepTools macs2 meme subread star samtools bedtools \
+    pandas numpydoc matplotlib cooler cooltools hicstuff
+```
+
+:::
+
+* Several R packages, the main ones being: 
+
+    - `BiocManager`
+    - `SummarizedExperiment`
+    - `rtracklayer`
+    - `GenomicRanges`
+    - `GenomicAlignments`
+    - `GenomicFeatures`
+    - `DESeq2`
+    - `gprofiler2`

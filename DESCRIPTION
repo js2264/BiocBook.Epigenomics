@@ -15,6 +15,25 @@ Depends:
     R (>= 4.3), 
     BiocBook
 Imports:
+    broom, 
+    dplyr, 
+    gprofiler2, 
+    ggrastr,
+    rtracklayer,
+    Rsamtools, 
+    GenomicAlignments, 
+    tidyverse, 
+    GenomicRanges, 
+    readxl, 
+    Biostrings, 
+    BSgenome.Celegans.UCSC.ce11, 
+    ChIPseeker, 
+    TxDb.Celegans.UCSC.ce11.ensGene, 
+    ggplot2, 
+    SummarizedExperiment, 
+    BiocParallel, 
+    DESeq2, 
+    plyranges
 Suggests:
     glue,
     rebook,

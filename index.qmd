@@ -21,9 +21,61 @@ intro <- glue::glue(
 
 `r intro`
 
-This is the landing page of the `BiocBook` entitled *...*.  
+This is the landing page for the **"Epigenomics Data Analysis"** 
+workshop, ed. 2023.  
 
-This book introduces the reader to *...*.  
+## What {-}
+
+This course will introduce biologists and bioinformaticians to the field of 
+regulatory epigenomics. We will cover a range of software and analysis 
+workflows for processing of next-generation sequencing datasets and 
+quantitative analysis ChIP-seq, ATAC-seq data and RNA-seq data. Towards the end of the workshop, 
+a brief introduction to chromatin conformation capture (Hi-C) experiments and analysis 
+will emphasize multi-omics data integration.
+
+We will start by introducing general concepts about epigenomics. 
+From there, we will then continue to describe the main analysis steps to go 
+from raw sequencing data to processed and usable data. We will present 
+classical analysis workflows, their output and the possible paths to 
+investigate downstream of this.  
+
+Throughout the workshop, `bash` tools and `R/Bioconductor` packages will 
+be used to analyse datasets and learn new approaches. 
+
+## Who {-}
+
+The course is aimed at researchers interested in learning how to extract 
+biological insights from genomics data, such as ChIP-seq, ATAC-seq or Hi-C.  
+
+It is primarily targeting researchers who are new to the field 
+of bioinformatics, with practical experience in the experimental side of 
+epigenomics. 
+
+Attendees should have a background in biology as well as be somewhat familiar with 
+genomic data and common file formats from NGS sequencing experiments 
+(fastq, BAM, BED).
+
+Practical exercises will use command-line Linux and R code and will be presented 
+as notebooks to ensure reproducible coding.
+
+## Why {-}
+
+At the end of this course, you should be able to:
+
+- Understanding important genomic file formats
+- Process most types of genomic datasets (RNA-seq, ATAC-seq, Hi-C, ChIP-seq, ...)
+- Analyzing processed datasets to extract relevant information and answer biological questions
+- Good practices to avoid confounding variables and pitfalls in the processing.
+- Proper use of controls and normalization.
+- Integration of different sequencing "omics" datasets
+- Characterisation of the global 3D structures from the sequencing data
+- Detection of regulatory interactions and quantification of their changes between conditions.
+
+Throughout the course, we will also have a focus on reproducible research, documented content and interactive reports.
+
+## Instructors {-}
+
+[Jacques Serizay](mailto:jacques.serizay@pasteur.fr)
 
 # Docker image {-}
 
@@ -32,6 +84,7 @@ A `Docker` image built from this repository is available here:
 👉 [ghcr.io/js2264/biocbook.epigenomics](https://ghcr.io/js2264/biocbook.epigenomics) 🐳
 
 ::: {.callout-tip icon='true'}
+
 ## Get started now 🎉
 
 You can get access to all the packages used in this book in < 1 minute, 

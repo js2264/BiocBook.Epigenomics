@@ -2,7 +2,31 @@ book:
   title: "BiocBook.Epigenomics"
   chapters:
     - index.qmd
-  cover-image: inst/assets/cover.png
+    - pages/program.qmd
+    - pages/prerequisites.qmd
+    - part: "Lecture slides"
+      chapters: 
+        - pages/Lecture1_introduction.qmd
+        - pages/Lecture2_processing.qmd
+        - pages/Lecture3_workflows.qmd
+        - pages/Lecture4_ATACseq.qmd
+        - pages/Lecture5_R-101.qmd
+        - pages/Lecture6_ChIPseq.qmd
+        - pages/Lecture7_R-201.qmd
+        - pages/Lecture8_RNAseq.qmd
+        - pages/Lecture9_R-301.qmd
+        - pages/Lecture10_HiC.qmd
+        - pages/Lecture11_GO-GSEA.qmd
+    - part: "Hands-on exercises"
+      chapters: 
+        - pages/lab-1-mnase-seq-processing.qmd
+        - pages/lab-2-atac-seq-analysis.qmd
+        - pages/lab-3-chip-seq-analysis.qmd
+        - pages/lab-4-rna-seq-analysis.qmd
+        - pages/lab-5-data-integration.qmd
+  appendices:
+    - pages/extra.qmd
+  # cover-image: inst/assets/cover.png
   favicon: inst/assets/favicon.png
   sidebar: 
     tools:
