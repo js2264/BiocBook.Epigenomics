@@ -5,9 +5,8 @@ Version: 0.99.0
 Date: `r date()`
 Authors@R: 
     person(
-        "First", "Last", , "first.last@example.com", 
-        role = c("aut", "cre"),
-        comment = c(ORCID = "YOUR-ORCID-ID")
+        "Jacques", "Serizay", , "jacquesserizay@gmail.com", 
+        role = c("aut", "cre")
     )
 URL: https://github.com/js2264/BiocBook.Epigenomics
 BugReports: https://github.com/js2264/BiocBook.Epigenomics
