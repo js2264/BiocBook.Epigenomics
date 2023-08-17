@@ -6,7 +6,6 @@ channels:
     - defaults
 dependencies:
     - fastqc 
-    - fastqc 
     - trim-galore 
     - bowtie2 
     - deepTools 
