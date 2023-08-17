@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "BiocBook.Epigenomics",
     "section": "",
-    "text": "Welcome\nPackage: BiocBook.EpigenomicsAuthors: Jacques Serizay [aut, cre]Compiled: 2023-08-16Package version: 0.99.0R version: R version 4.3.1 (2023-06-16)BioC version: 3.18License: MIT + file LICENSE\nThis is the landing page for the “Epigenomics Data Analysis” workshop, ed. 2023.\nA Docker image built from this repository is available here:\n👉 ghcr.io/js2264/biocbook.epigenomics 🐳\nAn RStudio Server instance can be initiated from the Docker image as follows:\nbash\n\ndocker run \\\n    --volume &lt;local_folder&gt;:&lt;destination_folder&gt; \\\n    -e PASSWORD=OHCA \\\n    -p 8787:8787 \\\n    ghcr.io/js2264/biocbook.epigenomics:devel\nThe initiated RStudio Server instance will be available at https://localhost:8787."
+    "text": "Welcome\nPackage: BiocBook.EpigenomicsAuthors: Jacques Serizay [aut, cre]Compiled: 2023-08-17Package version: 0.99.0R version: R version 4.3.1 (2023-06-16)BioC version: 3.18License: MIT + file LICENSE\nThis is the landing page for the “Epigenomics Data Analysis” workshop, ed. 2023.\nA Docker image built from this repository is available here:\n👉 ghcr.io/js2264/biocbook.epigenomics 🐳\nAn RStudio Server instance can be initiated from the Docker image as follows:\nbash\n\ndocker run \\\n    --volume &lt;local_folder&gt;:&lt;destination_folder&gt; \\\n    -e PASSWORD=OHCA \\\n    -p 8787:8787 \\\n    ghcr.io/js2264/biocbook.epigenomics:devel\nThe initiated RStudio Server instance will be available at https://localhost:8787."
   },
   {
     "objectID": "index.html#what",
